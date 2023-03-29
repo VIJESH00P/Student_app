@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-primary text-center m-4">View Student Details</h1>
+            
+           
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+         <!-- form -->
+
+
+            <div class="col-6">
+                <!-- <pre>
+                    {{yearId | json}}
+                </pre>
+                 <pre>
+                    {{yearName | json}}
+                </pre> -->
+                <ul class="list-group">
+                    <li class="list-group-item">Name:{{student.name}}
+                        
+                        
+                    </li>
+                    <li class="list-group-item">Department:{{student.department}}
+                        
+                        
+                    </li>
+                    
+                    <li class="list-group-item">Place:{{student.place}}
+                        
+                        
+                    </li>
+                    <li class="list-group-item">Mobile :{{student.mobile}}
+                         
+                         
+                        </li>
+                    
+                    <li class="list-group-item">Year:{{yearName}}
+                        
+                        
+                    </li>
+                    
+                 </ul>
+                 <a routerLink="/" class="btn btn-danger mt-5">Go Back</a>
+            </div>
+        <!-- image -->
+            <div class="col-6 ">
+                <img class="img-icon ms-5" [src]="student.photo" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</div>

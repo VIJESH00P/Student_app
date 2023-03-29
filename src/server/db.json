@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Subith O U",
+      "photo": "https://th.bing.com/th/id/OIP.Gm7fIVdaapx3gxKo65w5kQHaHm?w=214&h=220&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "department": "EC",
+      "place": "kannur",
+      "mobile": "9087653412",
+      "yearId": "1"
+    },
+    {
+      "id": 2,
+      "name": "Sreekanth",
+      "photo": "https://th.bing.com/th/id/OIP.A2opl3UfHz2NuCg0UKWZuQAAAA?pid=ImgDet&w=167&h=167&c=7&dpr=1.3",
+      "department": "EEE",
+      "place": "Kochi",
+      "mobile": "9087653416",
+      "yearId": "2"
+    },
+    {
+      "id": 3,
+      "name": "Sreerag",
+      "photo": "https://th.bing.com/th/id/OIP.MU_inV2EypvYJx6zv1O5wgHaHa?pid=ImgDet&w=199&h=199&c=7&dpr=1.3",
+      "department": "MECH",
+      "place": "Kasaragod",
+      "mobile": "9087653396",
+      "yearId": "3"
+    },
+    {
+      "id": 4,
+      "name": "Thejas",
+      "photo": "https://th.bing.com/th/id/OIP.pIKGJzWbFXa3bSLnOTsKRQHaHa?pid=ImgDet&w=199&h=199&c=7&dpr=1.3",
+      "department": "CIVIL",
+      "place": "Wayanad",
+      "mobile": "9087655466",
+      "yearId": "4"
+    }
+  ],
+  "year": [
+    {
+      "id": "1",
+      "name": "1st year"
+    },
+    {
+      "id": "2",
+      "name": "2nd year"
+    },
+    {
+      "id": "3",
+      "name": "3rd year"
+    },
+    {
+      "id": "4",
+      "name": "4th year"
+    }
+  ]
+}

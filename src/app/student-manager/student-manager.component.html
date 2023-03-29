@@ -1,0 +1,60 @@
+<p>Login Details:{{loginDate|  date:'medium'}}</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <!-- <h1 class="text-primary text-center m-4">Student Management System</h1> -->
+            <!-- carosel cheyyanam -->
+            <img style="width: 100%;" src="https://i1.wp.com/www.freestudentprojects.com/wp-content/uploads/2017/06/Organization-Student-Management-System.jpg?resize=840%2C369" alt="">
+            <a routerLink="/student/add" class="btn btn-primary mt-5" style="float: right;"><i class="fa-sharp fa-solid fa-person-circle-plus"></i>&nbsp;add</a>
+        </div>
+    </div>
+    <div class="row">
+          <div class="col-6">
+              <input (change)="search($event)" type="text"  class="form-control" placeholder="Search The Students">
+          </div>
+          <div class="col-6">
+             
+          </div>
+    </div>
+    <!-- <pre>
+        {{heading}}
+    </pre>
+    <pre>
+        {{allStudents | json}}
+    </pre> -->
+    <!-- card designing -->
+      <div class="container">
+        <div class="row">
+            <div class="col-6"*ngFor="let student of allStudents | filter:searchkey:'name'">
+                <div class="card mt-5">
+                  
+                  <div class="card-body bg-secondary p-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <img style="width: 150px;" [src]="student.photo" alt="">
+                        </div>
+                        <div class="col-8">
+                         <ul class="list-group">
+                            <li class="list-group-item">Name:{{student.name}}
+                                <!-- view -->
+                                <a routerLink="/student/view/{{student.id}}"  style="float: right;"><i class="fa-solid fa-eye "></i></a>
+                                
+                            </li>
+                            <li class="list-group-item">Place:{{student.place}}
+                                 <!-- Edit -->
+                                 <a routerLink="/student/update/{{student.id}}" style="float: right;"><i class="fa-solid fa-user-pen"></i></a>
+                                </li>
+                            <li class="list-group-item">Mobile No:{{student.mobile}}
+                                <!-- Delete -->
+                                <button class="btn text-danger" (click)="deleteStudent(student.id)" style="float: right;"><i class="fa-sharp fa-solid fa-user-minus"></i></button>
+                            </li>
+                            
+                         </ul>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
